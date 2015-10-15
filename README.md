@@ -18,6 +18,10 @@ Supports html,latex and latexpdf output.
           |       Lots of work      |
           +-------------------------+
 
+or alternatively
+
+    .. ditaa:: some/file/name.ditaa
+
 ##Installation
 
 it has got a setup.py script so just usual `python setup.py build` and
