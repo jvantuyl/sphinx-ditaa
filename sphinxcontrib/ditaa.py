@@ -164,6 +164,11 @@ def render_ditaa_html(self, node, code, options, prefix='ditaa',
     try:
         fname, outfn = render_ditaa(self, code, options, prefix)
     except DitaaError as exc:
+        info = str(exc)
+        sm = nodes.system_message(info, type='WARNING', level=2,
+                                  backrefs=[], source=node['code'])
+        sm.walkabout(self)
+        self.builder.warn(info)
         raise nodes.SkipNode
 
     inline = node.get('inline', False)
@@ -192,6 +197,11 @@ def render_ditaa_latex(self, node, code, options, prefix='ditaa'):
     try:
         fname, outfn = render_ditaa(self, code, options, prefix)
     except DitaaError as exc:
+        info = str(exc)
+        sm = nodes.system_message(info, type='WARNING', level=2,
+                                  backrefs=[], source=node['code'])
+        sm.walkabout(self)
+        self.builder.warn(info)
         raise nodes.SkipNode
 
     if fname is not None:
