@@ -18,7 +18,7 @@ Supports html,latex and latexpdf output.
           |       Lots of work      |
           +-------------------------+
 
-##Instalation
+##Installation
 
 it has got a setup.py script so just usual `python setup.py build` and
 `install` will suffice.
