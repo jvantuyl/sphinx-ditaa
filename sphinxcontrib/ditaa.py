@@ -100,7 +100,7 @@ def render_ditaa(self, code, options, prefix='ditaa'):
               str(self.builder.config.ditaa_args).encode('utf-8')
     outfname = '%s-%s.png' % (prefix, sha(hashkey).hexdigest())
     outrelfn = os.path.join(self.builder.imgpath, outfname)
-    outfullfn = os.path.join(self.builder.outdir, outrelfn)
+    outfullfn = os.path.join(self.builder.outdir, '_images', outfname)
 
     if os.path.isfile(outfullfn):
         return outrelfn, outfullfn
