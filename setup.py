@@ -15,8 +15,8 @@ with Sphinx_ multi-format support.
 
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 
-This extension adds the ``ditaa`` directive that automatically directive that automatically selects the
-image format to use acording to the Sphinx_ writer used to generate the
+This extension adds the ``ditaa`` directive that automatically selects the
+image format to use according to the Sphinx_ writer used to generate the
 documentation.
 
 Usage example::
