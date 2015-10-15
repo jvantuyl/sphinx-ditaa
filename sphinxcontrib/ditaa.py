@@ -47,7 +47,7 @@ class Ditaa(Directive):
     """
     has_content = True
     required_arguments = 0
-    optional_arguments = 0
+    optional_arguments = 1
     final_argument_whitespace = False
     option_spec = {
         'alt': directives.unchanged,
